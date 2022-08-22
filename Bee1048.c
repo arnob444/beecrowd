@@ -5,27 +5,32 @@ int main()
     int p;
     char c = '%';
     scanf("%f", &a);
-    if (a >= 0 && a <= 400.00 ){
+    if (a >= 0 && a <= 400.00)
+    {
         b = (a * 15) / 100;
         salary = a + b;
         p = 15;
     }
-    else if(a >= 400.01 && a <= 800.00){
+    else if (a >= 400.01 && a <= 800.00)
+    {
         b = (a * 12) / 100;
         salary = a + b;
         p = 12;
     }
-    else if(a >= 800.01 && a <= 1200.00){
+    else if (a >= 800.01 && a <= 1200.00)
+    {
         b = (a * 10) / 100;
         salary = a + b;
         p = 10;
     }
-    else if(a >= 1200.01 && a <= 2000.00){
-        b = (a*7)/100;
+    else if (a >= 1200.01 && a <= 2000.00)
+    {
+        b = (a * 7) / 100;
         salary = a + b;
         p = 7;
     }
-    else {
+    else
+    {
         b = (a * 4) / 100;
         salary = a + b;
         p = 4;
@@ -35,4 +40,3 @@ int main()
     printf("Em percentual: %d %c\n", p, c);
     return 0;
 }
-

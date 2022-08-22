@@ -11,7 +11,5 @@ int main()
     }
     else
         printf("Area = %.1f\n",((A+B)*C) / 2);
-
     return 0;
-
 }

@@ -1,10 +1,12 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c ;
-    scanf("%d%d%d",&a,&b,&c);
+    int a,b,c;
+    scanf("%d/%d/%d",&a,&b,&c);
 
-    printf("%d/%d/%d\n%d/%d/%d\n%d-%d-%d\n",a,b,c,c,a,b,b,a,c);
+    printf("%02d/%02d/%02d\n",b,a,c);
+    printf("%02d/%02d/%02d\n",c,b,a);
+    printf("%02d-%02d-%02d\n",a,b,c);
 
 
 

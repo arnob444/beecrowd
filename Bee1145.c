@@ -1,25 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int x,y,i,j = 0;
-    scanf("%d %d",&x,&y);
-    for(i = 1;i <= y;i++)
+    int i, j, n, x, y, a = 1;
+    scanf("%d %d", &x, &y);
+    int line = y / x;
+    n = x;
+    for (i = 1; i <= line; i++)
     {
-        j++;
-        printf("%d",i);
-        if(j == x || j == y)
-        {
-            printf("\n");
-            j = 0;
-        }
-        else
-        {
-            printf(" ");
-        }
-
+        printf("%d", a);
+        for (j = a + 1; j <= n; j++)
+            printf(" %d", j);
+        printf("\n");
+        a += x;
+        n += x;
     }
-
-
-
     return 0;
 }

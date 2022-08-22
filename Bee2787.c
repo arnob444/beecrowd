@@ -1,8 +1,6 @@
 #include <stdio.h>
-
-int main ()
+int main()
 {
-
 	int l, c;
 
 	scanf("%d %d", &l, &c);
@@ -14,6 +12,6 @@ int main ()
 		printf("1\n");
 
 	else
-		printf("0\n");
-
+		printf("0\n");	
 }
+

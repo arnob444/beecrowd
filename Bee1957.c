@@ -1,10 +1,10 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
   long int a;
-  while(scanf("%ld",&a)!= EOF)
+  while (scanf("%ld", &a) != EOF)
   {
-      printf("%X\n", a);
+    printf("%X\n", a);
   }
 
   return 0;
@@ -19,7 +19,7 @@ int main()
 // 		for(i=a; i<=b; i++)
 //      {
 // 			sum+=i;
-// 		}
+// 		 }
 // 		printf("%d\n",sum);
-	
+
 // }

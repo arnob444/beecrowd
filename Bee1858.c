@@ -1,24 +1,20 @@
-//EOF use for read unlimited data
-#include<stdio.h>
-int  main()
+#include <stdio.h>
+int main()
 {
-    int i,m,n,k,l;
-    while(scanf("%d",&n) != EOF)
+    int x, count = 1, y, min;
+    scanf("%d", &x);
+    scanf("%d", &y);
+    min = y;
+    for (int i = 1; i <= x - 1; i++)
     {
-        l = 20;
-        for( i = 0; i < n;i++)
+        scanf("%d", &y);
+        if (min > y)
         {
-            scanf("%d",&m);
-            if (m < 1)
-            {
-                l = m;
-                k = i + 1;
-            }
+            min = y;
+            count = i + 1;
         }
-        printf("%d",k);
-        k = 0;
     }
-
-
+    printf("%d", count);
     return 0;
 }
+

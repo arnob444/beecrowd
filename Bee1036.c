@@ -2,18 +2,16 @@
 int main()
 {
     double a, b, c, m;
+    double x, y;
 
-    scanf("%lf%lf%lf", &a,&b,&c);
+    scanf("%lf%lf%lf", &a, &b, &c);
+    m = (b * b) - (4 * (a) * (c));
 
-
-    m = (b*b) - (4*(a)*(c));
-
-    if(m > 0 && a != 0)
+    if (m > 0 && a != 0)
     {
-        double x, y;
         m = sqrt(m);
-        x = (-b + m)/(2*a);
-        y = (-b - m)/(2*a);
+        x = (-b + m) / (2 * a);
+        y = (-b - m) / (2 * a);
         printf("R1 = %.5lf\n", x);
         printf("R2 = %.5lf\n", y);
     }

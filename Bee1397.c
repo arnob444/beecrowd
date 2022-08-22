@@ -1,22 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int N,A,B;
-    int score1,score2;
-    while(1 == scanf("%d",&N))
+    int a, b, n, i, s1, s2;
+    while (1)
     {
-        if(0 == N)
+        s1 = 0;
+        s2 = 0;
+        scanf("%d", &n);
+        if (n == 0)
             break;
-        score1 = score2 = 0;
-        while(N--)
+        for (i = 0; i < n; i++)
         {
-            scanf("%d %d",&A,&B);
-            if(A > B)
-                score1++;
-            else if(B > A)
-                score2++;
+            scanf("%d %d", &a, &b);
+            if (a > b)
+                s1++;
+            if (b > a)
+                s2++;
         }
-        printf("%d %d\n",score1,score2);
+        printf("%d %d\n", s1, s2);
     }
     return 0;
 }
