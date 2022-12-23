@@ -4,11 +4,11 @@ int main()
     while (1)
     {
         int n, count = 0;
-        int i, arr[n];
         scanf("%d", &n);
         if (n == 0)
             break;
 
+        int i, arr[n];
         for (i = 0; i < n; i++)
         {
             scanf("%d", &arr[i]);

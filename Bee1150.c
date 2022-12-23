@@ -1,8 +1,8 @@
 /*
-3 + 3 = 6
-6 + 4 = 10
-10 + 5 = 15
-15 + 6 = 21 */
+0 + 3 = 3
+3 + 4 = 7
+7 + 5 = 12
+12 + 6 = 18 */
 #include <stdio.h>
 int main()
 {
@@ -20,5 +20,6 @@ int main()
         counter++;
     }
     printf("%d\n", counter);
+    
     return 0;
 }

@@ -1,21 +1,22 @@
 #include <stdio.h>
+
 int main()
 {
-    int n, k, code;
+    int n, k, c;
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
     {
         scanf("%d", &k);
         for (int j = 1; j <= k; j++)
         {
-            scanf("%d", &code);
-            if (code == 1)
+            scanf("%d", &c);
+            if (c == 1)
                 printf("Rolien\n");
-            else if (code == 2)
+            else if (c == 2)
                 printf("Naej\n");
-            else if (code == 3)
+            else if (c == 3)
                 printf("Elehcim\n");
-            else if (code == 4)
+            else if (c == 4)
                 printf("Odranoel\n");
         }
     }

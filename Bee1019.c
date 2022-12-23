@@ -1,15 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    int N, h = 0, m = 0, s = 0;
-    scanf("%d", &N);
+    int n, h = 0, m = 0, s = 0;
+    scanf("%d", &n);
 
-    h = N / 3600;
-    N = N % 3600;
-    m = N / 60;
-    s = N % 60;
+    h = n / 3600;
+    n = n % 3600;
+    m = n / 60;
+    s = n % 60;
 
-    printf("%d:%d:%d\n", h, m, s);
+    printf("%d:%d:%d", h, m, s);
 
     return 0;
 }

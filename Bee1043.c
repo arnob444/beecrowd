@@ -2,8 +2,7 @@
 int main()
 {
     float A, B, C;
-
-    scanf("%f %f %f", &A, &B, &C);
+    scanf("%f%f%f", &A, &B, &C);
 
     if (A < B+C && B < A+C && C < B+C)
     {

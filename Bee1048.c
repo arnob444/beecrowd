@@ -40,3 +40,5 @@ int main()
     printf("Em percentual: %d %c\n", p, c);
     return 0;
 }
+
+

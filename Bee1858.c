@@ -5,10 +5,11 @@ int main()
     scanf("%d", &x);
     scanf("%d", &y);
     min = y;
-    for (int i = 1; i <= x - 1; i++)
+    for (int i = 1; i < x; i++)
     {
         scanf("%d", &y);
-        if (min > y)
+        if (min > y)     // 8 > 0
+                        // min = 0
         {
             min = y;
             count = i + 1;
@@ -17,4 +18,5 @@ int main()
     printf("%d", count);
     return 0;
 }
+
 

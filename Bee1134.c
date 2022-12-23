@@ -1,22 +1,25 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int n,g = 0,a = 0,d = 0;
+    int n, g = 0, a = 0, d = 0;
     printf("MUITO OBRIGADO\n");
-    while(1)
+    while (1)
     {
-        scanf("%d",&n);
-        if(n > 0 && n < 4)
+        scanf("%d", &n);
+        if (n > 0 && n < 4)
         {
-            if(n == 1)a++;
-            else if(n == 2)g++;
-            else d++;
+            if (n == 1)
+                a++;
+            else if (n == 2)
+                g++;
+            else
+                d++;
         }
-        else if(n == 4)
+        else if (n == 4)
             break;
     }
-    printf("Alcool: %d\n",a);
-    printf("Gasolina: %d\n",g);
-    printf("Diesel: %d\n",d);
+    printf("Alcool: %d\n", a);
+    printf("Gasolina: %d\n", g);
+    printf("Diesel: %d\n", d);
     return 0;
 }

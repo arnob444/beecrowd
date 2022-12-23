@@ -1,21 +1,32 @@
 #include <stdio.h>
 int main()
 {
-    int n, i;
-    int a[100];
-    while (scanf("%d", &n) != EOF)
+    while (1)
     {
-        if (n < 0)
+        long long int x;
+        int i = 0, j, result[100000] = {0};
+        scanf("%lld", &x);
+
+        if (x < 0)
             break;
-        for ( i = 0; n > 0; i++)
+
+        while (x > 0)
         {
-            a[i] = n % 3;
-            n = n / 3;
+            result[i] = x % 3;
+            x /= 3;
+            i++;
         }
-        for ( i = i - 1; i >= 0; i--)
+        for (j = i - 1; j >= 0; j--)
         {
-            printf("%d", a[i]);
+            printf("%d", result[j]);
         }
+        printf("\n");
     }
     return 0;
 }
+
+// input
+//  10
+//  100
+//  1000
+//  -1

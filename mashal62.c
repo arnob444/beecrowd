@@ -7,6 +7,7 @@ int main()
     {
         scanf("%d", &x);
         printf("1");
+
         for (int i = 1; i <= x; i++)
         {
             printf("0");

@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
     double a,b,c;
@@ -18,7 +17,7 @@ int main()
     else if(a*a < (b*b + c*c) || b*b < (a*a + c*c) || c*c < (a*a + b*b))
         printf("TRIANGULO ACUTANGULO\n");
 
-    if(a == b && a == c)
+    if(a == b && b == c )
         printf("TRIANGULO EQUILATERO\n");
 
     if((a == b && a != c)  || (a == c && a != b) || (b == c && b != a))

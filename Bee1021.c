@@ -4,6 +4,7 @@ int main()
     double n;
     int a, b, c, d, e, f, g, h, i, j, k, l;
     scanf("%lf", &n);
+
     a = n * 100;
     b = a / 10000;
     a = a % 10000;
@@ -37,13 +38,13 @@ int main()
 
     l = a / 5;
     a = a % 5;
+    
     printf("NOTAS:\n");
     printf("%d nota(s) de R$ 100.00\n", b);
     printf("%d nota(s) de R$ 50.00\n", c);
     printf("%d nota(s) de R$ 20.00\n", d);
-    printf("%d nota(s) de R$ 10.00\n", e);
-    printf("%d nota(s) de R$ 5.00\n", f);
-    printf("%d nota(s) de R$ 2.00\n", g);
+    printf("%d nota(s) de R$ 5.00\n", e);
+    printf("%d nota(s) de R$ 2.00\n", e);
     printf("MOEDAS:\n");
     printf("%d moeda(s) de R$ 1.00\n", h);
     printf("%d moeda(s) de R$ 0.50\n", i);
@@ -51,5 +52,6 @@ int main()
     printf("%d moeda(s) de R$ 0.10\n", k);
     printf("%d moeda(s) de R$ 0.05\n", l);
     printf("%d moeda(s) de R$ 0.01\n", a);
+
     return 0;
 }

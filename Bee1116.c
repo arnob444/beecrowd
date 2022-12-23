@@ -6,7 +6,8 @@ int main()
     scanf("%d", &n);
     for (i = 0; i <= n; i++)
     {
-        scanf("%f %f", &a, &b);
+        scanf("%f%f", &a, &b);
+
         if (a == 0 && b == 0)
             printf("0.0\n");
         else if (b == 0)
@@ -16,6 +17,5 @@ int main()
         else
             printf("%.1f\n", a / b);
     }
-
     return 0;
 }

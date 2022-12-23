@@ -14,7 +14,6 @@ int main()
         for (i = 0; i < QT; i++)
         {
             scanf("%d", &tmp);
-
             if (s > tmp)
             {
                 num[i] = s - tmp;
@@ -24,10 +23,10 @@ int main()
                 num[i] = tmp - s;
             }
         }
+        // 27 9 5 8 1 18 28
         tmp = num[0];
         for (j = 0; j < QT; j++)
         {
-
             if (num[j] == 0)
             {
                 count = j;
@@ -40,6 +39,6 @@ int main()
             }
         }
         printf("%d\n", count + 1);
-    } 
+    }
     return 0;
 }

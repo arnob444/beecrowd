@@ -1,14 +1,14 @@
 #include <stdio.h>
 int main()
 {
-    int i, j;
+    int i, x;
     while (1)
     {
-        scanf("%d", &j);
-        if (j == 0)
+        scanf("%d", &x);
+        if (x == 0)
             break;
         printf("1");
-        for (i = 2; i <= j; i++)
+        for (i = 2; i <= x; i++)
         {
             printf(" %d", i);
         }

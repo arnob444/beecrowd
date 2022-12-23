@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    int n, i, e[5], o[5], a = 0, x, b = 0, y;
+    int n, i, e[5], o[5], a = 0, b = 0, x, y;
     for (i = 0; i < 15; i++)
     {
         scanf("%d", &n);
@@ -36,14 +36,15 @@ int main()
     }
     for (y = 0; y < 5; y++)
     {
-        if(o[y] == 0)
+        if (o[y] == 0)
             break;
-            printf("impar[%d] = %d\n", y, o[y]);
+        printf("impar[%d] = %d\n", y, o[y]);
     }
     for (x = 0; x < 5; x++)
     {
-        if(e[x] == 0)
+        if (e[x] == 0)
             break;
-            printf("par[%d] = %d\n", x, e[x]);
+        printf("par[%d] = %d\n", x, e[x]);
     }
+    return 0;
 }

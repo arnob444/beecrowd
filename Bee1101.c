@@ -4,7 +4,7 @@ int main()
     while (1)
     {
         int a, b, i, s = 0, temp;
-        scanf("%d %d", &a, &b);
+        scanf("%d%d", &a, &b);
         if (a <= 0 || b <= 0)
             break;
         if (a > b)
@@ -18,9 +18,7 @@ int main()
             printf("%d ", i);
             s = s + i;
         }
-
         printf("Sum=%d\n", s);
     }
-
     return 0;
 }

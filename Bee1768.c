@@ -8,16 +8,16 @@ int main()
         {
             for (col = 0; col < (n - row) / 2; col++)
                 printf(" ");
-            for (col = row; col >= 0; col--) //p
+            for (col = row; col >= 0; col--) 
                 printf("*");
-                printf("\n");
+            printf("\n");
         }
         for (row = 0; row < n / 2; row++)
             printf(" ");
-            printf("*\n");
+        printf("*\n");
         for (row = 1; row < n / 2; row++)
             printf(" ");
-            printf("***\n\n");
+        printf("***\n\n");
     }
     return 0;
 }

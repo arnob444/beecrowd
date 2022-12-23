@@ -12,7 +12,4 @@ int main()
     }
     printf("%d\n", fst);
     return 0;
-}
-//  n  = 0 1 1 2 3 
-//count= 0 1 2 3 4
-// problem
+}            

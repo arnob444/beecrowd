@@ -3,7 +3,7 @@ int main()
 {
     int x;
     scanf("%d",&x);
-    if(x == 1) printf("January\n");
+         if(x == 1) printf("January\n");
     else if(x == 2) printf("February\n");
     else if(x == 3) printf("March\n");
     else if(x == 4) printf("April\n");

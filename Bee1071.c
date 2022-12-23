@@ -9,6 +9,7 @@ int main()
         b = a;
         a = temp;
     }
+    
     for (i = a + 1; i < b; i++)
     {
         if (i % 2 != 0)

@@ -1,22 +1,22 @@
 #include <stdio.h>
 int main()
 {
-    int X, l, j = 0;
+    int X, l, count = 0;
     float n, i, avg, ar[2];
     while (1)
     {
-        j = 0;
+        count = 0;
         for (i = 0; i < 100; i++)
         {
             scanf("%f", &n);
             if (n >= 0 && n <= 10)
             {
-                ar[j] = n;
-                j++;
+                ar[count] = n;
+                count++;
             }
             else
                 printf("nota invalida\n");
-            if (j == 2)
+            if (count == 2)
             {
                 avg = (ar[0] + ar[1]) / 2;
                 printf("media = %.2f\n", avg);
@@ -37,4 +37,3 @@ int main()
     }
     return 0;
 }
-

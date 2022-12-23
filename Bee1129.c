@@ -10,7 +10,7 @@ int main()
         while (n--)
         {
             t = 0;
-            scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+            scanf("%d%d%d%d%d", &a, &b, &c, &d, &e);
             if (a <= 127)
             {
                 t++;
